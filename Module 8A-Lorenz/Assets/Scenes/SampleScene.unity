@@ -174,7 +174,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 2000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -200,14 +200,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.12918179, y: -0.1933483, z: 0.025689995, w: 0.9722492}
+  m_LocalPosition: {x: 362, y: 277, z: -815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15.137, y: -22.495, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4edb383fd13b57f47922486ca903bb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCube: {fileID: 2983639190872125509, guid: 055bbed4b4bd2b1479a3ba2f46d12b5a, type: 3}
+  tempFloat: 0
 --- !u!4 &768717482
 Transform:
   m_ObjectHideFlags: 0
@@ -469,6 +469,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6961684989159446819, guid: 055bbed4b4bd2b1479a3ba2f46d12b5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961684989159446819, guid: 055bbed4b4bd2b1479a3ba2f46d12b5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961684989159446819, guid: 055bbed4b4bd2b1479a3ba2f46d12b5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961684989159446819, guid: 055bbed4b4bd2b1479a3ba2f46d12b5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.16914654
       objectReference: {fileID: 0}
@@ -517,7 +532,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5022154947523724362, guid: 055bbed4b4bd2b1479a3ba2f46d12b5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 055bbed4b4bd2b1479a3ba2f46d12b5a, type: 3}
 --- !u!1 &938291016 stripped
 GameObject:
@@ -537,4 +553,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4edb383fd13b57f47922486ca903bb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCube: {fileID: 0}
+  tempFloat: 0
